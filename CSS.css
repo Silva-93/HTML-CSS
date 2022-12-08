@@ -1,0 +1,275 @@
+BOX MODEL
+/*  */
+	   size style color
+border: 5px solid black
+↖
+
+↑              ↖   ↗   ↘   ↙                       
+border-radios: 5px 5px 5px 5px -> ponta das bordas
+
+width: 0px;  -> largura
+height: 0px;  -> altura
+		
+		 ↑	  →	   ↓	←
+margin: 20px 20px 20px 20px; 
+
+		  ↑	   →    ↓	 ←
+padding: 20px 20px 20px 20px; 
+
+
+
+SELETORES DO CSS
+
+
+* {  /*seleciona tudo da página*/
+	margin: 0px;
+	padding: 0px;
+}
+
+
+/*Para selecionar uma TAG basta digitar o nome da mesma*/
+	p {
+		/*seleciona todos os parágrafos da página*/
+	}
+
+	main { 
+		
+	}
+
+	main p {
+		/*seleciona os parágrafos dentro do main*/
+	}
+	
+	body div section p,
+	body div section h1 {
+		/*Duais seleções de dependência*/
+	}	
+	...
+
+/*Para selecionar uma tag com clesse, use um ponto e o nome da classe. As classes podem ser usadas em mais de uma tag, todo o código CSS feito em uma classe será feito em todas as tags que possui a classe.*/
+	.NomeDaClasse {
+		
+	}
+
+	div.NomeDaClasse {
+		
+	}
+
+
+/*Para selecionar um ID é necessário colocar um # e o nome do ID*/
+	#NomeID {
+		
+	}
+
+	main#NomeID {
+		
+	}
+
+/* Seleciona o elemento que tiver diretamante após o seletor */
+main h1+p {
+
+}
+
+
+/* Seleciona todos os <p></p> depois do <h1></h1> */
+main h1~p {
+	
+}
+
+
+/* Seleção por atributo */
+
+[NomeDoAtributo] {
+	
+}
+
+
+[NomeDoAtributo="valor"] {
+	
+}
+
+
+/* Selecionando um valor específico dentro de uma lista de valores */
+[NomeDoAtributo~="valor2"] {
+	
+}
+
+/* seleciona valores seguidos de um "-" ex.: <h1 class="titulo" atributo="valor-a valor-b valor-c" */
+[NomeDoAtributo|="valor2"] {
+	
+}
+
+/* seleciona valores que começam com o valor passado */
+[NomeDoAtributo^="valor"] {
+	
+}
+
+
+/* seleciona valores que terminam com o valor passado */
+[NomeDoAtributo$="valor"] {
+	
+}
+
+
+
+/* seleciona valores que contem com o valor passado */
+[NomeDoAtributo^="valor"] {
+	
+}
+
+
+
+PSEUDO-CLASSES + ESTADO DE ELEMENTOS
+
+/* refletem o estado de um elemento */
+
+/* Sempre que o mouse passar em cime do elemento uma ação irá acontecer */
+.classe:hover {
+
+}
+
+/* Links que nunca foram visitados serão da cor vermelha */
+a:link {
+	color: red;
+}
+
+/* Links que já foram visitados ficaram na cor laranja */
+a:visited {
+	color: orange;
+}
+
+/* quando o elemento estiver selecionado uma ação será executada */
+input:focus {
+	
+}
+
+
+SELETORES :not e :nth-child
+
+:not -> Nega uma ação 
+
+	p:not(.meio) {
+		color: blue; /* Todos os parágrafos vão ficar azuis, menos os que tiveram a classe .meio */ 
+	}
+
+
+:nth-child -> seleciona um grupo de elementos irmão para fazer uma ação.
+
+	ul li:nth-child(índice) { /* seleciona o elemento pelo índice */
+		
+	}
+
+	ul li:nth-child(even) { /* seleciona os elementos de índices pares */
+		
+	}
+
+
+	ul li:nth-child(odd) { /* seleciona os elementos de índice impar */
+		
+	}
+
+
+
+	ul li:nth-child(3n) { /* seleciona os elementos de 3 em 3 índices */
+		
+	}
+
+	ul li:nth-child(3n+5) { /* a partir do 5° elemento será selecionado de 3 em 3 elementos */
+	}
+
+
+PSEUDO-ELEMENTOS
+
+::before & ::after
+
+
+/* depois do elemento <li> terá um -> */
+ul li::after {
+	content: ' -> '; /* content é o que vc quer que apareça */
+}
+
+/* antes do elemento <li> terá uma <- */
+ul li::before {
+	content: ' <- ';
+}
+
+/* Somente a primeira letra do texto aumentará e tamanho */
+p::first-letter {
+	font-size: 50px;
+}
+
+
+/* a primeira linha do parágrafo será alterada */
+p::first-line {
+	background-color: red;
+}
+
+
+/* O que estiver selecionado será modificado */
+p::selection {
+	font-size: 10px;
+}
+
+
+ESPECIFICIDADES DO CSS
+
+/* 
+	Quando há um empate nos elementos selecionados sendo a especificidade a mesma, a que irá prevalecer será sempre a última colocada.
+*/
+
+/*
+	Níveis de especificidade
+	
+	1° ID (1,0,0)
+	2° CLASSES (0,1,0)
+	3° ATIBUTOO E PSEUDO-CLASSES 
+	4° ELEMENTOS E PESEUDO-ELEMENTOS 
+	
+	!important -> Mais forte que todas as outras especificidades, ele só é bobrescrito por outro !important
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

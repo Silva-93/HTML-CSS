@@ -1,0 +1,141 @@
+@charset UTF8;
+
+/* adicionando CSS no arquivo */
+body {  /* adicionando cor no fundo da página  */
+    background-color: lightblue;
+    /* alterando a fonte das letras */
+    font-family: Arial, Helvetica, sans-serif;
+    /* tamanho das letras */
+    font-size: 20px;
+}
+
+h1 {  /* Alterando a cor do h1 */
+    color: blue;
+}  
+
+h2 {  /* Alterando a cor do h2 */
+    color: purple;
+}
+
+p {  /* Alterando o alinhamento do texto */
+    text-align: justify;
+}
+
+/* Formas de adicionar cores nos textos */
+<h2 style="background-color: blue; color: white;" >Cores CSS</h2>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis blanditiis eveniet tempora, 
+    
+/* Cores com números hexadecimais 
+As cores em hexadecímais são representadas por 6 digitos ond
+0       0       0       0       0       0
+red     verde   azul    claro   croma   matiz */    
+<h2 style="background-color: #0000ff; color: #ffffff;">Cores CSS</h2>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis blanditiis eveniet tempora, 
+    
+/* Cores com RGB (Red, Green, Blue) */
+<h2 style="background-color: rgb(0, 0, 255); color: rgb(255, 255, 255);">Cores CSS</h2>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis blanditiis eveniet tempora, 
+
+/* Cores com HSL (Hue, Saturation, Luminosity) */
+<h2 style="background-color: hsl(240, 100%, 50%); color: hsl(0, 0%, 100%);">Cores CSS</h2>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis blanditiis eveniet tempora,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo de tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+        nav {
+            background-color: rgb(95, 94, 94);
+            padding: 3px;
+            width: 265px;
+            /* direção  <->  ↕ borra espalha  cor */
+            box-shadow: 6px 8px 10px 1px rgb(56, 56, 56);
+            border-radius: 5px;
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bolder;
+            margin-right: 30px;           
+        }
+        nav > a:hover {
+            color: rgb(87, 29, 141);
+            text-decoration: underline;
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border: 2px solid black;
+        /*  bordas          ↖    ↗    ↘    ↙    */
+            border-radius: 10px 10px 10px 10px;
+
+        }
+        article {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgray;
+            padding: 10px;
+            margin: 10px;
+            border: 1.5px solid black;
+            border-radius: 10px;
+            box-shadow: 2.5px 4px 8px 2px rgb(109, 108, 108);
+        }
+        article > aside {
+            background-color: darkgrey;
+            width: 180px;
+        }
+        footer {
+            color: white;
+            background-color: black;
+            text-align: center;
+            height: 50px;
+            padding: 1px;
+            margin: 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site.</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    
+    <main>
+
+        <section id="noticias">
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit in, veritatis eum facilis cum aut! Quisquam debitis doloribus rerum veritatis ullam sapiente optio minima consequatur ipsam consequuntur ipsum, blanditiis laborum.</p>
+                <aside>
+                    <p>Artigo escritp por Fulano.</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido pelo curso em vídeo</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,18 @@
+/* adicionando CSS no arquivo */
+body {  /* adicionando cor no fundo da página  */
+    background-color: lightblue;
+    /* alterando a fonte das letras */
+    font-family: Arial, Helvetica, sans-serif;
+    /* tamanho das letras */
+    font-size: 20px;
+}
+h1 {  /* Alterando a cor do h1 */
+    color: blue;
+}  
+h2 {  /* Alterando a cor do h2 */
+    color: purple;
+}
+p {  /* Alterando o alinhamento do texto */
+    text-align: justify;
+}
+

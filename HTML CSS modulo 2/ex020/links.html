@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links personalizados</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            color: green;
+            /* Tira o sublinhado */
+            text-decoration: none;
+            font-weight: bolder; /* negrito */
+        }
+        a:visited {
+            /*quadno o link for visitado a cor do mesmo ficará vermelho escuro*/
+            color: darkred;  
+        }
+        a:hover {
+            color: rgb(49, 49, 192);
+            text-decoration: underline;
+        }
+        .main::after {
+            /* adiciona um conteúdo depois do elemento */
+            content: ' [link]';
+            font-weight: normal;
+            color: blueviolet;
+        }
+        .main {
+            background-color: lightgray;
+            border: 1px solid black;
+            display: inline-block;
+        }
+        .main:hover {
+            background-color: rgb(61, 119, 61);
+        }
+    </style>
+</head>
+<body>
+    <h1>Links personalizados</h1>
+    <ul>
+        <li><a href="https://hub.docker.com/" target="_blank" class="main">DockerHub</a></li>
+        <li><a href="https://gist.github.com/" target="_blank">github</a></li>
+    </ul>
+</body>
+</html>

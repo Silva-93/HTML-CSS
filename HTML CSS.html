@@ -1,0 +1,268 @@
+TAGs Normalmente usadas dentro de parágrafos.
+
+	<b> </b> - Deixa o texto em negrito
+	<strong></strong> - Deixa o texto mais forte (semântico), visualmente igual a tag <b></b>
+
+	<i></i> - Deixa o texto em itálico
+
+	<em></em> - Dá ênfase em texto (semântico), visualmente igual a tag <i></i>
+
+	<a href=""> </a> - cria um link para um arquivo ou site
+
+	<a href="" target="_blank"> </a> - abre o link em uma nova guia
+
+	<img src="link or path_file" alt="Description"> - Insere uma imagem
+
+	<u></u> - Deixa um risco na palavra, indicando que a mesma está errada e não deve ser levada em consigeração
+
+	<del></del> - Deixa um risco na palavra, indicando que a mesma está errada e não deve ser levada em consigeração, visualmente iguala tag <u></u>. (semântico)
+
+	<small></small> - deixa o texto pequeno
+
+	<sup></sup> - deixa o texto "elevado" como uma potência matemática.
+
+	<sub></sub> - deixa o texto mais baixo.
+
+	<br> - quebra de linha.
+
+	<q cite="site/file"></q> - uma citação 
+
+<hr> - Cria uma linha horizontal 
+
+<blockquote></blockquote> um bloco de citação. é usado fora da tag <p></p>
+
+<code></code> - para fazer citação de um pedaço de código
+.name_class - seleciona uma classe no CSS
+exemplo
+    <pre>
+        <code>n = int(input('Digite um número: ') <br>
+        for x in range(1,11):<br>
+            print(f'{x}x{n}={x*n}')
+        </code>
+    </pre>
+
+<span></span> - é um cloco genérico inline, ou seja, pode ser usada dentro de um parágrafo.
+
+<div></div> - é um bloco gerérico
+
+
+
+
+BOX MODEL
+<style>
+	   size style color
+border: 5px solid black
+↖
+
+↑               ↖   ↗   ↘   ↙                       
+border-radios: 5px 5px 5px 5px -> ponta das bordas
+
+width: 200px;  -> largura
+height: 150px;  -> altura
+		
+		 ↑	  →	   ↓	←
+margin: 20px 20px 20px 20px; 
+
+		  ↑	   →    ↓	 ←
+padding: 20px 20px 20px 20px; 
+</style>
+
+
+LISTAS
+
+Listas ordenadas
+
+
+<ul>  -> Lista não ordenada.
+	<li>Item 1</li> 
+	<li>Item 2</li>
+	<li>Item 3</li>
+</ul>  
+
+Lista ordenadas, a ordem dos itens importa. O type indidca a númeração da lista os tipos de numeração são: 1(numericos) A(alfabética maiúscula) a(alfabética minúscula) I(n° romanos maiúsculos) i(n° romanos menúsculos). O start é de onde irá começãr a númeração.
+<ol type="1" start="n°">  -> lista ordenada.
+	<li>Item 1</li>
+	<li>Item 2</li>
+	<li>Item 3</li>
+</ol>  
+
+<dl>  -> lista de descrição
+	<dt>café</dt>  -> termo de descrição
+	<dd>Bebida quente escura</dd>  -> descrição
+</dl>
+
+ <nav>  -> lista de navegação
+	<ul>
+		<li><a href="#"><a/>Home</li>
+		<li><a href="#"><a/>About</li>
+		<li><a href="#"><a/>Products</li>
+	</ul>
+ </nav>
+ 
+ 
+ 
+ TABELAS
+ 
+ <table>  -> Cria uma tabela
+	<caption>Descrição da tabela</caption>  -> Descrição da tabela
+	<thead>  -> cabeçalho da tabela
+		<tr>  -> linhas da tabela
+			<th>Titulo 1</th>  -> Colunas
+			<th>Titulo 2</th>
+			<th>Titulo 3</th>
+		</tr>	
+	</thead>
+ 
+	<tbody>  -> corpo da tabela
+		<tr>
+			<td>Corpo1</td>
+			<td colspan="2">Corpo2</td>  -> o colspan indica o número de colunas que a celula vai ocupar
+			<td rowspan="2">Corpo3</td>  -> o rowspan indica o número de linhas que a celula vai ocupar
+
+		</tr>
+	</tbody>
+ 
+	<tfoot>  -> rodapé da tabela.
+		<tr>
+			<td>Rodapé1</td>
+			<td>Rodapé2</td>
+			<td>Rodapé3</td>
+		</tr>
+	</tfoot>
+ 
+ </table>
+
+
+
+FORMULÁRIOS
+o 'action' é para onde o formulário será enviado. Pode ser uma URL, a propria página, um arquivo...
+
+<section>
+	<form action="#" method="get" target="_blank" autocomplete="off">
+		<h1>Cabeçalho</h1>
+		<p>O fomulário</p>
+			
+		<p>        <!--ID do input-->
+			<label for="nome"></label>
+			<input type="text" id="nome" name="nome" placeholder="Seu nome" required>  -> Entrada do tipo texto.
+															<!--required torna o campo obrigatório-->
+			
+			<label>Genero:</label> 
+			<input type="checkbox" id="feminino">  <!--Cria uma caixa de seleção-->
+			
+			<label for="feminino">feminino</label>
+			<input type="radio" id="feminino" name="genero" value="feminino">
+			
+			<label for="dev3">É um dev?</label>
+			<input type="checkbox" id="dev3">
+		</p>
+
+		<p>
+			<label for="date">Data:</label>
+			<input type="date" id="date"> <!--Cria um calendário de formulário-->
+		</p>
+
+		<p> <!--Cria um botão-->
+			<button type="submit">Enviar</button>
+			<button type="reset">Reset</button> <!--Reseta os valores para os valores default-->
+		</p>
+			
+			
+			
+			
+		<fieldset>
+			<legend>Descrição</legend>
+			<p>
+				<input type="text">
+			</p>
+		</fieldset>
+	</form>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
