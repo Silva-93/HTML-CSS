@@ -5,12 +5,10 @@
     margin: 0px;
 }
 
-
-
-
 html, body {
     min-height: 100vh;
     background-color: darkgray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
@@ -24,6 +22,7 @@ header {
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps; /*Deixando todas as letras maiúsculas*/
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 
@@ -49,6 +48,7 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 
